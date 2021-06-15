@@ -7,11 +7,14 @@ import CheckoutProduct from "./CheckoutProduct";
 function Checkout() {
   const [{basket, user}, dispatch] = useStateValue();
   return (
-    <div className="checkout">
-      <div checkName="checkout__left">
-        <img className="checkout__ad" src="https://www.smartinsights.com/wp-content/uploads/2020/09/1718x600.png"/>
+    <div className="container">
+    <div className="checkout row">
+      <div checkName="checkout__left col-md-6">
         <div>
           <h3>Hello, {user?.email}</h3>
+          <div className="checkout__right d-flex justify-content-sm-end my-4 justify-content-md-end">
+            <Subtotal/>
+          </div>
           <h2 className="checkout__title">Your shopping basket</h2>
           {basket.map(item => (
             <CheckoutProduct
@@ -24,9 +27,8 @@ function Checkout() {
           ))}
         </div>
       </div>
-      <div className="checkout__right">
-        <Subtotal/>
-      </div>
+
+    </div>
     </div>
   );
 }

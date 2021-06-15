@@ -1,0 +1,37 @@
+.footer_container {
+  background-color: #282827;
+  color: gray;
+  height: 250px;
+}
+ul > li{
+  text-decoration: none;
+  display: inline;
+  margin: 20px;
+}
+li > a {
+  text-decoration: none;
+  color: gray;
+}
+li > a:hover {
+  color: white;
+}
+.contacts {
+  text-align: center;
+}
+.contacts > p {
+  display: block;
+}
+.sponsors {
+  text-align: right;
+  margin-right: 40px;
+}
+.sponsors > a {
+  text-decoration: none;
+  color: gray;
+}
+.sponsors > a:hover {
+  color: white;
+}
+.cc {
+  text-align: center;
+}

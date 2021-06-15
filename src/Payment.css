@@ -15,12 +15,12 @@
   display: flex;
   padding: 20px;
   margin: 0 20px;
-  border-bottom: 1px solid;
+  border-bottom: 1px solid
 }
-.payment__title {
+/* .payment__title {
   flex: 0.2;
-}
-.payment__address, .payment__items, .payment__details {
+} */
+.payment__address, .payment__details {
   flex: 0.8;
 }
 .payment__details > form {

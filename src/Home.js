@@ -2,25 +2,32 @@ import React from 'react';
 import "./Home.css";
 import "./Home.css";
 import Product from "./Product";
+import CarouselContainer from "./CarouselContainer";
+
+//
+
 
 function Home() {
   return (
     <div className="home">
       <div className="home__container">
-        <button type="button" className="btn btn-primary">
-          Click me!
-        </button>
-      <div className="home__row">
+      <div className="home__image">
+        <CarouselContainer/>
+      </div>
+      <div className="txt">
+        <h1>Bringing You the best hand drawn Images.</h1>
+      </div>
+      <div className="home__row mb-md-5">
         <Product
           id="1922893982"
-          title="Nativity Painting of people inside rome"
+          title="Squirrel with pointed teeth"
           price={12.0}
-          image="https://images.pexels.com/photos/159862/art-school-of-athens-raphael-italian-painter-fresco-159862.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+          image="/dc1.jpg"
           rating={4}
         />
         <Product
           id="3837028373"
-          title="The great Elephant"
+          title="Elephant on a wall"
           price={20.0}
           image="https://images.pexels.com/photos/3977529/pexels-photo-3977529.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
           rating={5}
@@ -36,20 +43,20 @@ function Home() {
         />
         <Product
           id="3837428373"
-          title="The light show"
+          title="Illuminated Face Paints"
           price={10.0}
-          image="https://images.pexels.com/photos/2541310/pexels-photo-2541310.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+          image="dc2.jpg"
           rating={5}
-        />
-        <Product
-          id="3837020073"
-          title="Heat on leaves"
-          price={20.0}
-          image="https://images.pexels.com/photos/3631430/pexels-photo-3631430.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-          rating={4}
         />
       </div>
       <div className="home__row">
+        <Product
+          id="3837020073"
+          title="Spiral Flower Petals"
+          price={20.0}
+          image="dc3.jpg"
+          rating={4}
+        />
         <Product
           id="3837020073"
           title="Face Colored"

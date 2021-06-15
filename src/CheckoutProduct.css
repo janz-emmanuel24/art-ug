@@ -11,12 +11,11 @@
 .checkoutProduct__info > button {
   background:#E59866;
   border-radius: 2px;
-  padding: 5px;
-  height: 30px;
   border: 1px solid;
-  margin-top: 10px;
+  margin-top: 0px;
   border-color:#de7c3b;
   color: black;
+  width: 150px;
 }
 
 .checkoutProduct__image {

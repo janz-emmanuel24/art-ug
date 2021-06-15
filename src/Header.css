@@ -8,7 +8,7 @@
   z-index: 100;
 }
 
-.header__logo {
+/* .header__logo {
   width: 100px;
   object-fit: contain;
   margin: 0 40px;
@@ -21,21 +21,21 @@
   flex: 1;
   align-items: center;
   border-radius: 30px;
-}
-
+} */
+/*
 .header__searchIcon {
   padding: 5px;
   height: 22px !important;
   background-color: #E59866;
-}
+} */
 
-.header__searchInput {
+/* .header__searchInput {
   height: 12px;
   padding: 10px;
   border: none;
   width: 100%;
   margin-left: 3%;
-}
+} */
 
 .header__option {
   display: flex;
@@ -64,6 +64,9 @@
   display: flex;
   align-items: center;
   color: white;
+}
+.removeLink {
+  text-decoration: none;
 }
 
 .header__basketCount {

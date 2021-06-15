@@ -117,33 +117,31 @@ function Payment() {
     }
 
     return (
-        <div className='payment'>
+        <div className='payment container'>
             <div className='payment__container'>
                 <h1>
                     Checkout (
                         <Link to="/checkout">{basket?.length} items</Link>
                         )
                 </h1>
-
-
                 {/* Payment section - delivery address */}
-                <div className='payment__section'>
-                    <div className='payment__title'>
-                        <h3>Delivery Address</h3>
-                    </div>
-                    <div className='payment__address'>
-                        <p>{user?.email}</p>
-                        <p>123 React Lane</p>
-                        <p>Los Angeles, CA</p>
-                    </div>
+                <div className='payment__section row'>
+                  <div className='payment__title col-4'>
+                    <h3>Delivery Address</h3>
+                  </div>
+                  <div className='payment__address col-4'>
+                    <p>{user?.email}</p>
+                    <p>123 React Lane</p>
+                    <p>Los Angeles, CA</p>
+                  </div>
                 </div>
 
                 {/* Payment section - Review Items */}
-                <div className='payment__section'>
-                    <div className='payment__title'>
+                <div className='payment__section row'>
+                    <div className='payment__title mr-2 col-sm-4'>
                         <h3>Review items and delivery</h3>
                     </div>
-                    <div className='payment__items'>
+                    <div className='payment__items mt-2 mb-2'>
                         {basket.map(item => (
                             <CheckoutProduct
                                 id={item.id}
@@ -156,9 +154,8 @@ function Payment() {
                     </div>
                 </div>
 
-
                 {/* Payment section - Payment method */}
-                <div className='payment__section'>
+                <div className='payment__section row'>
                     <div className="payment__title">
                         <h3>Payment Method</h3>
                     </div>
